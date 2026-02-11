@@ -495,44 +495,4 @@
             .contact-card p { font-size: 0.95rem; word-break: break-word; overflow-wrap: anywhere;}
         }
 
-        /* ================= INTRO TERMINAL ================= */
-
-        #intro-overlay {
-            position: fixed;
-            inset: 0;
-            background: #000000;
-            color: #00f2ff;
-            font-family: 'Fira Code', monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 1s ease, visibility 1s ease;
-        }
-
-        #intro-overlay.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-
-        .terminal-loader {
-            max-width: 700px;
-            line-height: 1.8;
-            font-size: 1.1rem;
-            text-shadow: 0 0 5px rgba(0, 242, 255, 0.5);
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 1rem;
-            background: #00f2ff;
-            margin-left: 5px;
-            vertical-align: middle;
-            animation: blinkCursor 0.8s step-end infinite;
-        }
-
-        @keyframes blinkCursor {
-            50% { opacity: 0; }
-        }
+        

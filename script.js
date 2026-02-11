@@ -1,17 +1,3 @@
-const terminalContainer = document.getElementById('terminal-text');
-const introOverlay = document.getElementById('intro-overlay');
-
-const lines = [
-    "[    0.000000] Booting Linux on ARM architecture...",
-    "[    0.214532] Initializing kernel subsystems...",
-    "[    0.482193] Loading device drivers...",
-    "[    0.736421] Mounting root filesystem...",
-    "[    1.102948] Starting system services...",
-    "[    1.438221] Initializing user-space environment...",
-    "[    1.792003] System initialization complete.",
-    "Launching portfolio interface..."
-];
-
 let lineIdx = 0;
 
 function typeTerminal() {
@@ -44,8 +30,4 @@ function typeTerminal() {
     }
 }
 
-window.addEventListener('load', () => {
-    document.body.style.overflow = "hidden";
-    window.scrollTo(0, 0);
-    typeTerminal();
-});
+
